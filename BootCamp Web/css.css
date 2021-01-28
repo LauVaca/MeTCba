@@ -1,0 +1,407 @@
+body
+{
+	margin: 0;
+    padding: 0;
+    width: auto;
+}
+.nav
+{
+	width: auto;
+	height: 64px;
+	background-color: white;
+}
+
+.logoInicio
+{
+	width: 148px;
+	height: 36px;
+	float: left;
+	margin-left: 48px;
+	margin-top: 14px;
+	margin-bottom: 14px;
+}
+
+.contenedorTexto
+{
+	width: 265px;
+	height:22px;
+	margin-top: 21px;
+	margin-bottom: 21px;
+	float: right; 
+	font-family: Helvetica;
+	font-size: 14px;
+	margin-right: 48px;
+}
+
+#nosotras
+{
+	border-left: none;
+}
+
+.textobarra
+{
+	text-align: center;
+	color: #666666;
+	text-decoration: none;
+	border-left: 1px solid #eeeeee;
+	border-right: 1px solid #eeeeee;
+	float: left;
+	border-right: none; 
+	padding: 4px 10px 5px 10px;
+	
+}
+
+.textobarra:hover
+{
+	text-decoration: none;
+	color: #666666;
+}
+
+.imagenGrande
+{
+	width: 100%;
+	height: 512px;
+}
+
+.contenedorImagen
+{
+	position: relative;
+    display: inline-block;
+    text-align: left;
+    width: 100%;
+}
+
+.cuadrado
+{
+	top: 249px;
+	width: 106px;
+	height: 145px;
+	background-color: #ff5d5d;
+	position: absolute;
+}
+
+.textoEncima
+{
+	top: 240px;
+	left: 130px;
+	position: absolute;
+	font-family: Helvetica;
+	font-size: 48px;
+	font-weight: bold;
+	color: white;
+	
+}
+
+.hcomunidadMet
+{
+	font-family: Helvetica;
+	font-size: 48px;
+	font-weight: bold;
+	font-style: normal;
+	font-stretch: normal;
+	letter-spacing: -1.33px;
+	text-align: center;
+	color: #ff5d5d;
+}
+
+.hquienesSomos
+{
+	margin-top: -10px;
+	font-family: Helvetica;
+	font-size: 32px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	letter-spacing: normal;
+	text-align: center;
+	color: black;
+}
+
+.comunidadMet
+{
+	float: center;
+}
+.contenedorTextoComMet
+{
+	height: 132px;
+	width: 720px;
+	margin-top: -5px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.parrafo1
+{
+	font-family: Helvetica;
+	font-size: 20px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.25;
+	letter-spacing: normal;
+	text-align: center;
+	color: black;
+}
+
+.bootcampWeb
+{
+	height: 396px;
+	background-color: #f5f6f8;
+}
+
+.hbootCamp
+{
+	font-family: Helvetica;
+	font-size: 48px;
+	font-weight: bold;
+	font-style: normal;
+	font-stretch: normal;
+	letter-spacing: -1.33px;
+	text-align: left;
+	color: #ff5d5d;
+	margin-left: 130px;
+	padding-top: 50px;
+	margin-bottom: 0px;
+}
+
+.parrafo2
+{
+	margin-left: 130px;
+	width: 600px;
+	height: 200px;
+	font-family: Helvetica;
+	font-size: 20px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.25;
+	letter-spacing: normal;
+	color: black;
+	display: inline-block;
+}
+
+.imagen2
+{
+	display: inline-block;
+	width: 400px;
+	float: right;
+	margin-right: 50px;
+}
+
+.imagen
+{
+	width: 321px;
+	height: 192px;
+}
+
+
+.contacto
+{
+	margin-right: auto;
+	margin-left: auto;
+	padding-top: 10px;
+}
+
+.hcontacto
+{
+	font-family: Helvetica;
+	font-size: 48px;
+	font-weight: bold;
+	font-style: normal;
+	font-stretch: normal;
+	letter-spacing: -1.33px;
+	text-align: center;
+	color: #ff5d5d;
+}
+
+.textoContacto
+{
+	font-family: Helvetica;
+	font-size: 20px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.25;
+	letter-spacing: normal;
+	text-align: center;
+	color: black;
+	width: 499px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.contenedorForm
+{
+	width: 775px;
+	height: 578px;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 4px;
+	box-shadow: 0 3px 10px 0 rgba(39, 46, 87, 0.12);
+	background-color: #ffffff;
+	margin-top: 54px;
+}
+
+label
+{
+	font-family: Helvetica;
+	font-size: 14px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1;
+	letter-spacing: normal;
+	color: rgba(0, 0, 0, 0.45);
+	display: block;
+}
+
+input
+{
+	width: 310px;
+	height: 35px;
+	border-radius: 4px;
+	border: solid 1px rgba(0, 0, 0, 0.25);
+	background-color: #ffffff;
+	margin-top: 10px;
+	font-family: Helvetica;
+	font-size: 14px;
+}
+
+.nombre
+{
+	display: inline-block;
+	margin-top: 40px;
+	margin-left: 60px;
+}
+
+.mail
+{
+	display: inline-block;
+	margin-top: 40px;
+	margin-left: 60px;
+}
+
+.apellido
+{
+	display: inline-block;
+	margin-top: 40px;
+	margin-right: 60px;
+	margin-left: 8px;
+}
+
+.telefono
+{
+	display: inline-block;
+	margin-top: 40px;
+	margin-right: 60px;
+	margin-left: 8px;
+}
+
+.consulta
+{
+	display: block;
+	margin-top: 40px;
+	margin-left: 60px;
+}
+
+.tconsulta
+{
+	margin-top: 10px;
+	width: 644px;
+	height: 137px;
+	border-radius: 4px;
+	border: solid 1px rgba(0, 0, 0, 0.25);
+	background-color: white;
+	font-family: Helvetica;
+	font-size: 14px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1;
+	letter-spacing: normal;
+	padding-top: 10px;
+}
+
+.boton
+{
+	margin: 40px 291px;
+	width: 193px;
+	height: 45px;
+	border-radius: 4px;
+	background-color: #e24752;
+	border:0px;
+	color: white;
+	font-family: Helvetica;
+	font-size: 16px;
+	text-align: center;
+}
+
+.contenedorFooter
+{
+	width: 100%;
+	height: auto;
+	margin-top: 79px;
+	background-color:#e24752;
+}
+
+.contenedorTextoFooter
+{
+	display: inline-block;
+}
+
+.escribenos
+{
+	margin-left: 43px;
+	padding-top: 23px;
+}
+
+.escribenosA, .seguinos
+{
+	font-family: Helvetica;
+	font-size: 13px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.38;
+	letter-spacing: normal;
+	color: white;
+}
+
+.iconos
+{
+	margin-left: 43px;
+	padding-bottom: 20px;
+}
+
+.ico
+{
+	padding-right: 10px;
+}
+
+.metBlanco
+{
+	display: inline-block;
+	float: right;
+	margin-top: 58px;
+	margin-right: 48px;
+}
+
+
+/*media es una pantalla y funcionara si el tamaño minimo es de 480*/
+/*480 (celular) 768(tablet pequeña/celular grande) 1024-1280 tablet grande pc pantallas grandes*/
+
+@media screen and (max-width: 768px)
+{
+	.contenedorTextoComMet{width: 500px;}
+	.bootcampWeb{margin-top: 100px; height: 800px; }
+	.imagen2{display: block; margin-top: 50px; margin-left: auto; }
+	.parrafo2{width: 400px;}
+	
+}
+
+@media screen and (max-width: 1024px)
+{
+	.bootcampWeb{height: 510px; }
+	.parrafo2{width: 350px; float: center; }
+	.imagen2{display: block; margin-top: 30px; float: center; }
+}
+

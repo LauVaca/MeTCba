@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    	<meta charset="UTF-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    	<!-- todo lo que esta en content es para que en mobile se vea bien tambien -->
+		<title>Bootcamp web</title>
+		<link rel="stylesheet" type="text/css" href="css.css">
+    </head>
+
+    <body>
+    	<nav class="nav">
+	    	<img src="images/me-t-logo.jpg" class="logoInicio" />
+	    	<div class="contenedorTexto">
+		    	<a href="https://metcba.org/" class="textobarra" id="nosotras" target="_blank">Nosotras</a>
+		    	<a href="https://metcba.org/bootcamp/" class="textobarra" id="bootcamp" target="_blank">Bootcamp</a>
+		    	<a href="https://metcba.org/nosotras#" class="textobarra" id="contacto" target="_blank">Contacto</a>
+	    	</div>
+    	</nav>
+    	
+    	<div class="contenedorImagen">
+    		<img src="images/hero.jpg" class="imagenGrande"/>
+    		<div class="cuadrado"></div>
+    		<div class="textoEncima">APRENDÉ <br>PROGRAMACIÓN <br>WEB Y POTENCIÁ <br>IDEAS</div>
+    	</div>
+
+    	<div class="comunidadMet">
+	    	<h1 class="hcomunidadMet">Comunidad MET</h1>
+	    	<h2 class="hquienesSomos">¿Quienes somos?</h2>
+	    	<div class="contenedorTextoComMet">
+	    		<p class="parrafo1">Mujeres que trabajan y estudian en áreas de computación, automatización, ciencia de datos y tecnología en general. Centramos nuestro trabajo en la provincia de Córdoba, buscamos colaborar con otros grupos, reforzar la comunidad Argentina y ser parte de las redes regionales y globales con objetivos y visiones similares.
+	    		</p>
+	    	</div>
+		</div>
+
+		<div class="bootcampWeb">
+	    	<h1 class="hbootCamp">Bootcamp Web</h4>
+	    	<div class="parrafo2">
+		    	<p>Durante el Bootcamp Web <b>vas a aprender a diseñar soluciones web y armar una landing page en pocos pasos.</b>
+		    	</p>
+		    	<p>Nos enfocamos en la práctica real, con acompañamiento de mentoras y profesionales de la industria. El Bootcamp Web está dirigido a mujeres y géneros no binarios para <b>impulsar la diversidad en la comunidad tecnológica cordobesa</b> y visibilizar nuestro impacto.</p>
+		    </div>
+	    	<div class="imagen2"><img src="images/imagen-bootcamp.jpg" class="imagen" /></div>
+		</div>
+
+		<div class="contacto">
+	    	<h1 class="hcontacto">Contactate con nosotras</h1>
+	    	<p class="textoContacto">Querés ser parte de la <b>comunidad MET,</b> escribinos y ayudanos a que cada vez seamos más. </p>
+    	</div>
+
+    	<!-- FORMULARIO -->
+    	<form class="contenedorForm">
+	    	<div class="nombre">
+		    	<label>Nombre</label>
+		    	<input type="text" name="nombre" placeholder="   Nombre" class="inombre">
+		   	</div>
+		   	<div class="apellido">
+		    	<label>Apellido</label>
+		    	<input type="text" name="apellido" placeholder="   Apellido" class="iapellido">
+		    </div>
+		    <div class="mail">	
+		    	<label>Mail</label>
+		    	<input type="email" name="mail" placeholder="   mail@gmail.com" class="imail">
+		    </div>
+		    <div class="telefono">	
+		    	<label>Teléfono</label>
+		    	<input type="tel" name="telefono" placeholder="   351500000" class="itelefono">
+		    </div>
+		    <div class="consulta">	
+		    	<label>Consulta</label>
+		    	<textarea rows="7" cols="70" class="tconsulta" placeholder="   Consulta"></textarea>
+	    	</div>
+	    	<button type="submit" onclick="return validarFormulario()" class="boton">Enviar</button>
+    	</form>
+    	
+    	<footer class="contenedorFooter">
+    		<div class="contenedorTextoFooter">
+	    		<div class="escribenos">
+		    		<p class="escribenosA">Escríbenos a <br><b>bootcamp@metcba.org</b></p> 
+		    		<p class="seguinos">Seguinos</p>
+	    		</div> 
+	    		<div class="iconos">
+	    			<a href="https://www.facebook.com/MetCbaOK/" target="_blank"><img src="images/facebook.png" class="ico"></a>
+	    			<a href="https://twitter.com/MeTCBaOk" target="_blank"><img src="images/twitter.png" class="ico"></a>
+	    			<a href="https://www.linkedin.com/company/met-cba/?originalSubdomain=ar" target="_blank"><img src="images/linkedin.png" class="ico"></a>
+	    			<a href="https://www.youtube.com/watch?v=emU1IjdnE5c" target="_blank"><img src="images/youtube.png" class="ico"></a>
+	    		</div> 
+			</div>
+    		<div class="metBlanco">
+    			<img src="images/me-t-logo-white.png"/>
+    		</div>
+    		
+    	</footer>
+
+    	<script src="js.js"></script>
+
+    </body>
+</html>
