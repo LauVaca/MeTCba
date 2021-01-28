@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- todo lo que esta en content es para que en mobile se vea bien tambien -->
+	<title>Desafio App</title>
+	<link rel="stylesheet" type="text/css" href="css.css">
+
+	<link rel="stylesheet" href="css/bootstrap.css" />
+	<link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="css/responsive.css" />
+
+	<link href="https://fonts.googleapis.com/css?family=Modak&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<header class="header_area">
+		<div class="main_menu">
+			<nav class="navbar navbar-expand-lg w-100">
+				<div class="container">
+					<a class="navbar-brand logo_h" href="Principal.html">
+						<img src="imagenes/logo.jpg" class="logoPrincipal" alt="" />
+					</a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+						<div class="row w-100">
+							<div class="col-lg-12 pr-lg-0">
+								<ul class="nav navbar-nav ml-auto justify-content-end">
+									<li class="nav-item active">
+										<a class="nav-link" href="index.html">Home</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="about.html">¿Quienes somos?</a>
+									</li>
+
+									<li class="nav-item">
+										<a class="nav-link" href="contact.html">Contacto</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</nav>
+		</div>
+	</header>
+
+
+
+	<!--SLIDER-->
+	<div class="medio">
+	<div class="slideshow-container">
+		<div class="mySlides fade">
+			<img src="imagenes/ban1.png" class="imgslider">
+		</div>
+
+		<div class="mySlides fade">
+			<img src="imagenes/ban2.png" class="imgslider">
+		</div>
+
+		<div class="mySlides fade">
+			<img src="imagenes/ban3.png" class="imgslider">
+		</div>
+
+		<div class="mySlides fade">
+			<img src="imagenes/ban4.png" class="imgslider">
+		</div>
+
+		<div class="mySlides fade">
+			<img src="imagenes/ban5.png" class="imgslider">
+		</div>
+
+
+		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+		<a class="next" onclick="plusSlides(1)">&#10095;</a>
+	</div>
+</div>
+
+
+	<h1 class="proxEventos">Próximos Eventos</h1>
+	<div class="contenedorEventos"> <!-- contenedor de todos los eventos -->
+		<button name="btnn" class="btnn">
+			<div class="fechaEvento">28 de Septiembre</div>
+			<h3 class="evento">Evento 1</h3>
+		</button>
+
+		<button name="btnn" class="btnn">
+			<div class="fechaEvento">28 de Septiembre</div>
+			<h3 class="evento">Evento 2</h3>
+		</button>
+
+		<button name="btnn" class="btnn">
+			<div class="fechaEvento">28 de Septiembre</div>
+			<h3 class="evento">Evento 3</h3>
+		</button>
+	</div>
+
+
+
+
+	<footer class="contenedorFooter">
+		<div class="contenedorTextoFooter">
+			<div class="escribenos">
+				<p class="escribenosA">Escríbenos a <br><b>info.desafioapp@gmail.com</b></p>
+				<p class="seguinos">Seguinos</p>
+			</div>
+			<div class="iconos">
+				<a href="https://www.facebook.com/DesafioApp/" target="_blank"><img src="imagenes/facebook.ico" class="ico"></a>
+				<a href="https://www.instagram.com/desafioapp/" target="_blank"><img src="imagenes/instagram.ico" class="ico"></a>
+			</div>
+		</div>
+
+		<div class="contenedorderecha">
+			<div class="bloqueimg">
+				<img src="imagenes/secretaria.png" class="imgder"/>
+				<img src="imagenes/gob.png" class="imgder"/>
+			</div>
+			<div class="bloqueimg">
+				<img src="imagenes/me-t-logo-white.png" class="imgder"/>
+				<img src="imagenes/cluster.png" class="imgder"/>
+			</div>
+		</div>
+
+	</footer>
+
+	<script type="text/javascript">
+		var slideIndex = 0;
+		showSlides();
+
+		function showSlides() {
+			var i;
+			var slides = document.getElementsByClassName("mySlides");
+			for (i = 0; i < slides.length; i++) {
+				slides[i].style.display = "none";
+			}
+			slideIndex++;
+			if(slideIndex > slides.length) {slideIndex = 1}
+				slides[slideIndex-1].style.display = "block";
+			setTimeout(showSlides,5000);
+		}
+	</script>
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+</body>
+</html>

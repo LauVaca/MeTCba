@@ -1,0 +1,229 @@
+body
+{
+	margin: 0;
+    padding: 0;
+    width: 100%;
+    height: auto;
+}
+
+.navbar
+{
+	border-width: 5px;
+	box-shadow: 0px 2px 10px  #0CFBE4;
+}
+
+.logoPrincipal
+{
+	width: 90px;
+	height: 90px;
+	float: left;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+
+
+/*SLIDER*/
+{box-sizing:border-box}
+
+.slideshow-container
+{
+	max-width: 800px;
+	position:relative;
+	fmargin:auto;
+	margin: 60px auto;
+}
+
+.mySlides{
+	display:none;
+}
+
+.imgslider
+{
+	height:400px;
+	width:800px;
+}
+
+.prev, .next
+{
+ cursor:pointer;
+ position:absolute;
+ top:50%;
+ width:auto;
+ margin-top:-22px;
+ padding:16px;
+ color:white;
+ font-weight:bold;
+ font-size:18px;
+ transition:0.3s ease;
+ border-radius:0 3px 3px 0;
+}
+
+.next
+{
+ right:0;
+ border-radius:3px 0 0 3px;
+}
+
+.prev:hover, .next:hover
+{
+ background-color:rgba(0,0,0,0.8);
+}
+
+.text
+{
+ color:#f2f2f2;
+ font-size:15px;
+ padding:8px 12px;
+ position:absolute;
+ bottom:8px;
+ width:100%;
+ text-align:center;
+}
+
+.numbertext
+{
+ color:#f2f2f2;
+ font-size:12px;
+ padding:8px 12px;
+ position:absolute;
+ top:0;
+}
+
+.fade
+{
+ -webkit-animation-name:fade;
+ -webkit-animation-duration:1.5s;
+ animation-name:fade;
+ animation-duration:1.5s;
+}
+
+@-webkit-keyframes fade
+{
+ from{opacity:.4}
+ to{opacity:1}
+}
+
+@keyframes fade
+{
+ from{opacity:.4}
+ to{opacity:1}
+}
+
+.contenedorEventos
+{
+	width: 100%;
+	height: auto;
+
+}
+
+
+@font-face
+{
+	font-family: 'My Hey Pretty Girl';
+	scr: url("My Hey Pretty Girl.ttf");
+}
+.proxEventos
+{
+	text-align: center;
+	font-family: 'Mf Hey Pretty Girl';
+	margin-top: 20px;
+	font-size: 60px;
+
+}
+
+.btnn
+{
+	margin: 10px auto;
+	display: block;
+	width: 650px;
+	height: 150px;
+	border-radius: 5px;
+	background-color: white ;
+	border: #0CFBE4 solid;
+	border-width: 5px;
+	box-shadow: 5px 5px 5px lightgrey;
+	color: black;
+	font-family: 'Modak', cursive;
+	font-size: 16px;
+	/*text-align: center;*/
+
+
+}
+
+
+.contenedorFooter
+{
+	width: 100%;
+	height: auto;
+	margin-top: 80px;
+	background-color:#0CFBE4;
+	border-top: #0CFBE4 solid;
+	box-shadow: 2px 0px 10px lightgrey;
+}
+
+.contenedorTextoFooter
+{
+	display: inline-block;
+}
+
+.escribenos
+{
+	margin-left: 43px;
+	padding-top: 23px;
+}
+
+.escribenosA, .seguinos
+{
+	font-family: Helvetica;
+	font-size: 13px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.38;
+	letter-spacing: normal;
+	color: black;
+}
+
+.iconos
+{
+	margin-left: 43px;
+	padding-bottom: 30px;
+}
+
+.ico
+{
+	height: 30px;
+	padding-right: 10px;
+}
+
+.contenedorderecha
+{
+	display: inline-block;
+	float: right;
+	margin-top: 20px;
+	margin-right: 40px;
+	width: 500px;
+}
+
+.evento{
+	font-family: 'Mf Hey Pretty Girl';
+	font-size: 30px;
+}
+
+.fechaEvento{
+	font-family: "Roboto Condensed", sans-serif;
+}
+.bloqueimg
+{
+	text-align: right;
+}
+
+
+.imgder
+{
+	height: 30%;
+	width: 30%;
+	padding-left: 10px;
+	padding-right: 10px;
+}

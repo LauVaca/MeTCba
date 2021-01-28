@@ -1,0 +1,170 @@
+<html lang="es">
+	<head>
+		<meta charset="utf-8" />
+		<title>Desafio App: Formulario</title>
+
+		<!-- Estilos CSS -->
+		<link rel="stylesheet" type="text/css" href="css.css">
+		<link rel="stylesheet" href="css/bootstrap.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/responsive.css" />
+
+		<!-- jQuery -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<link rel="stylesheet" href="js/jquery-ui/jquery-ui.min.css" />
+		<link rel="stylesheet" href="js/jquery-ui/jquery-ui.structure.min.css" />
+		<link rel="stylesheet" href="js/jquery-ui/jquery-ui.theme.min.css" />
+		<script type="text/javascript" src="js/jquery-ui/jquery-ui.min.js"></script>
+
+
+		<!-- Plugin validacion -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>
+
+		<!-- Mis Scripts -->
+		<script type="text/javascript">
+			$(document).ready(function(){
+
+			// Validación
+			if(window.location.href.indexOf('Formulario') > -1){
+				$("form input[name='date']").datepicker({
+					dateFormat: 'dd-mm-yy'
+				});
+				$.validate({
+					lang: 'es',
+					scrollToTopOnError : true
+				});
+
+			}
+		});
+
+	</script>
+	</head>
+
+<body>
+	<!--NAVBAR-->
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark w-100">
+		<a class="navbar-brand logo_h" href="Home.html">
+			<img src="imagenes/logoDA.png" class="logoPrincipal" alt="" />
+		</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		</button>
+
+		<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+
+			<ul class="nav navbar-nav ml-auto">
+				<li class="nav-item active">
+					<a class="nav-link" href="Home.html">HOME <span class="sr-only">(current)</span></a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">QUIENES SOMOS</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">CONTACTO</a>
+				</li>
+			</ul>
+
+		</div>
+	</nav>
+
+
+	<!--FLECHA-->
+	<div class="volverAtras">
+		<a href="evento.html">
+			<img src="imagenes/flecha.png" class="flecha" />
+			<div class="atras">Atrás</div>
+		</a>
+	</div>
+	
+	<!-- FORMULARIO -->
+	<h1 class="formularioTitulo">Formulario de inscripción</h1>
+	
+	<form class="contenedorForm" id="formInsc">
+		<div class="form-row">
+			<div class="form-group col-md-6 nombre">
+				<label class="labelForm">Nombre</label>
+				<input type="text" id="nombre" name="nombre" class="form-control inputNombre" data-validation="custom" data-validation-regexp="^([a-z]+)$">
+			</div>
+			<div class="form-group col-md-6 apellido">
+				<label class="labelForm">Apellido</label>
+				<input type="text" id="apellido" name="apellido" class="form-control inputApellido" data-validation="custom" data-validation-regexp="^([a-z]+)$">
+			</div>
+		</div>
+		<div class="form-row">
+			<div class="form-group col-md-2 edad">	
+				<label class="labelForm">Edad</label>
+				<select class="form-control mr-sm-2" data-validation="required">
+					<option value="15">15</option>
+					<option value="16">16</option>
+					<option value="17">17</option>
+					<option value="18">18</option>
+					<option value="mas">+18</option>
+				</select>
+			</div>
+			<div class="form-group col-md-4 nombre">
+				<label class="labelForm">Nº documento</label>
+				<input type="text" id="nroDoc" name="nroDoc" class="form-control inputDocumento" data-validation="number length" data-validation-length="max8">
+			</div>
+			<div class="form-group col-md-6 fechaNac">	
+				<label class="labelForm">Fecha Nacimiento</label>
+				<input type="text" id="fechaNac" class="form-control inputFechaNac inputForm" name="date" data-validation="date" data-validation-format="dd-mm-yyyy"/>
+			</div>
+		</div>
+		<div class="form-row">
+			<div class="form-group col-md-6 nroCelular">	
+				<label class="labelForm">Nº celular</label>
+				<input type="tel" id="nroCel" name="nroCelular" class="form-control inputNroCelular inputForm" data-validation="number">
+			</div>
+			<div class="form-group col-md-6 mail">	
+				<label class="labelForm">Mail</label>
+				<input type="mail" id="mail" name="mail" class="form-control inputMail inputForm" data-validation="email">
+			</div>
+		</div>
+		<div class="form-row">
+			<div class="form-group col-md-6 nroCelularEmergencia">	
+				<label class="labelForm">Nº celular emergencia</label>
+				<input type="tel" id="nroCelEmergencia" name="nroCelularEmergencia" class="form-control inputCelEmerg inputForm" data-validation="number">
+			</div>
+			<div class="form-group col-md-6 nombreTutor">	
+				<label class="labelForm">Nombre Tutor</label>
+				<input type="text" id="idnombretutor" name="nombreTutor" class="form-control inputNombreTutor inputForm" data-validation="custom" data-validation-regexp="^([a-z]+)$">
+			</div>
+		</div>
+		
+		<div class="botonInscribir">
+			<button type="submit" class="btn btn-celeste" value="" >Enviar</button>
+			<!-- <span class="help-block form-error">El valor proporcionado no es un número válido</span> -->
+		</div>
+	</form>
+	
+
+	<!--FOOTER-->
+	<footer class="contenedorFooter">
+		<div class="contenedorTextoFooter">
+			<div class="escribenos">
+				<p class="escribenosA">Escríbenos a <br><b>info.desafioapp@gmail.com</b></p>
+				<p class="seguinos">Seguinos en</p>
+			</div>
+			<div class="iconos">
+				<a href="https://www.facebook.com/DesafioApp/" target="_blank"><img src="imagenes/facebook.ico" class="ico"></a>
+				<a href="https://www.instagram.com/desafioapp/" target="_blank"><img src="imagenes/instagram.ico" class="ico"></a>
+				<a href="https://twitter.com/desafio_app" target="_blank"><img src="imagenes/twitter.ico" class="ico"></a>
+			</div>
+		</div>
+		<!-- Copyright -->
+		<div class="footer-copyright text-center bg-dark py-1">© 2019 Copyright:
+			<a href=""> DesafioApp</a>
+		</div>
+	</footer> 
+
+
+	<!-- 
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script> -->
+</body>
+</html>
